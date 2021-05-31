@@ -2,7 +2,7 @@ import { createMachine } from 'xstate';
 import { defaultContext, CartMachineContext } from './context';
 import { CartMachineEvent } from './events'
 
-const cartMachine = createMachine<CartMachineContext, CartMachineEvent>({
+export const cartMachine = createMachine<CartMachineContext, CartMachineEvent>({
   id: 'cart',
   meta: 'カートの状態を管理する',
   context: defaultContext,
@@ -36,5 +36,3 @@ const cartMachine = createMachine<CartMachineContext, CartMachineEvent>({
   guards: {},
   services: {}
 });
-
-export default cartMachine;

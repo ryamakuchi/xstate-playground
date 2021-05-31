@@ -1,15 +1,21 @@
-import { useMachine } from '@xstate/react'
-import cartMachine from '../state-machine/index'
-import Shop from '../components/Shop'
+import React, { useContext } from 'react';
+import { useRouter } from 'next/router';
+import { CartContext } from '../components/cart-context';
+import { inCartEventCreator } from '../state-machine/events';
+import { Shop } from '../components/shop';
 
 export default function Home() {
-  const [state, send, service] = useMachine(cartMachine, { devTools: true });
-  console.log(state)
-  console.log(service)
+  const router = useRouter();
+  const [, send] = useContext(CartContext);
+
+  const sendEdit = (): void => {
+    send(inCartEventCreator());
+    router.push('/cart');
+  }
 
   return (
     <>
-      <Shop />
+      <Shop click={sendEdit} />
     </>
   )
 }
