@@ -27,7 +27,7 @@ export const CartEditCreditForm: FC = () => (
         <FormLabel>有効期限 / セキュリティ番号</FormLabel>
         <Flex>
           <Input
-            type="number"
+            type="text"
             marginRight="1"
             placeholder="04 / 24"
             autoComplete="cc-exp"
