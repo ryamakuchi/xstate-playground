@@ -1,21 +1,18 @@
 import { FC } from 'react';
 import {
-  Heading,
   Flex,
   Box,
-  Center,
   Divider,
   Text,
+  Button
 } from '@chakra-ui/react';
 
 import { CartEditCustomerForm } from './cart-edit-customer-form';
+import { CartEditCreditForm } from './cart-edit-credit-form';
+import { CartEditItem } from './cart-edit-item';
 
 export const CartEditPage: FC = () => (
   <>
-    <Center h="100px">
-      <Heading>rry's Shop</Heading>
-    </Center>
-
     <Box width="80%" margin="auto">
       <Flex
         direction={{ base: 'column', md: 'row' }}
@@ -39,15 +36,19 @@ export const CartEditPage: FC = () => (
 
       <Divider margin="5% 0" />
 
-      <Box>
-        <Heading as="h2" size="md">クレジットカード</Heading>
-      </Box>
+      <CartEditCreditForm />
 
       <Divider margin="5% 0" />
 
-      <Box>
-        <Heading as="h2" size="md">注文内容</Heading>
-      </Box>
+      <CartEditItem />
+
+      <Divider margin="5% 0" />
+
+      <Flex direction="row-reverse">
+        <Button colorScheme="teal" size="lg">
+          入力情報を確認
+        </Button>
+      </Flex>
     </Box>
   </>
 )

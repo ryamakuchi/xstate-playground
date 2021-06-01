@@ -12,17 +12,13 @@ import {
 import { WarningIcon } from '@chakra-ui/icons';
 
 export interface ShopProps {
-  click: () => void;
+  onClick: () => void;
 }
 
 export const ShopPage: FC<ShopProps> = ({
-  click
+  onClick: handleClick
 }) => (
   <>
-    <Center h="100px">
-      <Heading>rry's Shop</Heading>
-    </Center>
-
     <Flex justify="center">
       <Box p={{ sm: '0', md: '8' }} m="4" border="1px" borderColor="gray.200" borderRadius="lg">
         <Flex direction={{ base: 'column', md: 'row' }} align="center">
@@ -58,7 +54,9 @@ export const ShopPage: FC<ShopProps> = ({
 
               <Text fontSize="1rem">コザクラインコの形をした刺繍ブローチです。</Text>
 
-              <Button colorScheme="teal" size="lg" onClick={click}>カートに入れる</Button>
+              <Button colorScheme="teal" size="lg" onClick={handleClick}>
+                カートに入れる
+              </Button>
             </Stack>
           </Box>
         </Flex>
