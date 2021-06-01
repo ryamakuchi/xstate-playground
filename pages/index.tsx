@@ -8,14 +8,14 @@ export default function Home() {
   const router = useRouter();
   const [, send] = useContext(CartContext);
 
-  const sendEdit = (): void => {
+  const handleClick = (): void => {
     send(inCartEventCreator());
     router.push('/cart');
   }
 
   return (
     <>
-      <Shop click={sendEdit} />
+      <Shop click={handleClick} />
     </>
   )
 }
