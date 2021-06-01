@@ -8,7 +8,7 @@ import { CartEditPage } from '../components/cart-edit-page';
 
 export default function Cart() {
   const router = useRouter();
-  const [state, send, service] = useContext(CartContext);
+  const { state, send, service } = useContext(CartContext);
 
   const isStateEdit = state.value === 'edit'
 

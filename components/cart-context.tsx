@@ -14,14 +14,16 @@ export type CartService<
     TEvent extends EventObject = CartMachineEvent
 > = Interpreter<TContext, any, TEvent>;
 
-export type CartMachineContextProps = [
-  CartState,
-  CartService['send'],
-  CartService
-];
+export type CartMachineContextProps = {
+  state: CartState,
+  send: CartService['send'],
+  service: CartService
+};
 
 const service = interpret(cartMachine);
 
-export const CartContext = createContext<CartMachineContextProps>([
-  service.state, service.send, service
-]);
+export const CartContext = createContext<CartMachineContextProps>({
+  state: service.state,
+  send: service.send,
+  service
+});

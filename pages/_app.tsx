@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider>
-      <CartContext.Provider value={[state, send, service]}>
+      <CartContext.Provider value={{ state, send, service }}>
         <Component {...pageProps} />
       </CartContext.Provider>
     </ChakraProvider>

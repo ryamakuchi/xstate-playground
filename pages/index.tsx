@@ -6,7 +6,7 @@ import { ShopPage } from '../components/shop-page';
 
 export default function Home() {
   const router = useRouter();
-  const [, send] = useContext(CartContext);
+  const { send } = useContext(CartContext);
 
   const handleClick = (): void => {
     send(inCartEventCreator());
