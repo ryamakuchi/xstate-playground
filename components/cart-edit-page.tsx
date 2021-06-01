@@ -10,7 +10,7 @@ import {
 
 import { CartEditCustomerForm } from './cart-edit-customer-form';
 
-export const CartEdit: FC = () => (
+export const CartEditPage: FC = () => (
   <>
     <Center h="100px">
       <Heading>rry's Shop</Heading>

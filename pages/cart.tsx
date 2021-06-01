@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { Flex, Spinner } from '@chakra-ui/react';
 
 import { CartContext } from '../components/cart-context';
-import { CartEdit } from '../components/cart-edit';
+import { CartEditPage } from '../components/cart-edit-page';
 
 export default function Cart() {
   const router = useRouter();
@@ -19,16 +19,18 @@ export default function Cart() {
   }, [state])
 
   if (!isStateEdit) {
-    return <Flex justify="center" align="center" h="100vh">
-      <Spinner
-        thickness="4px"
-        speed="0.65s"
-        emptyColor="gray.200"
-        color="blue.500"
-        size="xl"
-      />
-    </Flex>
+    return (
+      <Flex justify="center" align="center" h="100vh">
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="blue.500"
+          size="xl"
+        />
+      </Flex>
+    )
   }
 
-  return (<CartEdit />);
+  return (<CartEditPage />);
 }

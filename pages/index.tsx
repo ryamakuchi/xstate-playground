@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useRouter } from 'next/router';
 import { CartContext } from '../components/cart-context';
 import { inCartEventCreator } from '../state-machine/events';
-import { Shop } from '../components/shop';
+import { ShopPage } from '../components/shop-page';
 
 export default function Home() {
   const router = useRouter();
@@ -13,9 +13,5 @@ export default function Home() {
     router.push('/cart');
   }
 
-  return (
-    <>
-      <Shop click={handleClick} />
-    </>
-  )
+  return (<ShopPage click={handleClick} />)
 }
