@@ -1,8 +1,8 @@
-import { FC } from 'react'
 import { Flex, Box, Divider, Text, Button } from '@chakra-ui/react'
+import { FC } from 'react'
 
-import { CartEditCustomerForm } from './cart-edit-customer-form'
 import { CartEditCreditForm } from './cart-edit-credit-form'
+import { CartEditCustomerForm } from './cart-edit-customer-form'
 import { CartEditItem } from './cart-edit-item'
 
 export const CartEditPage: FC = () => (

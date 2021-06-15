@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { CartContext } from '../components/cart-context'
-import { inCartEventCreator } from '../state-machine/events'
 
-import { Header } from '../components/header'
-import { Footer } from '../components/footer'
-import { ShopPage } from '../components/shop-page'
+import { CartContext } from '../components/cart-context'
 import { CartEditPage } from '../components/cart-edit-page'
+import { Footer } from '../components/footer'
+import { Header } from '../components/header'
+import { ShopPage } from '../components/shop-page'
+import { inCartEventCreator } from '../state-machine/events'
 
 export default function Home() {
   const { state, send } = useContext(CartContext)

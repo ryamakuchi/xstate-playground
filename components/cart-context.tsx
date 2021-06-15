@@ -1,5 +1,6 @@
 import { createContext } from 'react'
 import { EventObject, State, Interpreter, interpret } from 'xstate'
+
 import { CartMachineContext } from '../state-machine/context'
 import { CartMachineEvent } from '../state-machine/events'
 import { cartMachine } from '../state-machine/index'

@@ -1,6 +1,7 @@
-import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { useMachine } from '@xstate/react'
+import type { AppProps } from 'next/app'
+
 import { CartContext } from '../components/cart-context'
 import { cartMachine } from '../state-machine/index'
 

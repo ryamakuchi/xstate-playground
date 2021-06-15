@@ -1,5 +1,5 @@
-import { FC } from 'react'
 import { Heading, Box, Flex, FormControl, FormLabel, Input } from '@chakra-ui/react'
+import { FC } from 'react'
 
 export const CartEditCreditForm: FC = () => (
   <>

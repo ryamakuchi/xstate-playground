@@ -1,5 +1,5 @@
-import { FC } from 'react'
 import { Heading, Box, Flex, VStack, StackDivider, Center, Image, Text } from '@chakra-ui/react'
+import { FC } from 'react'
 
 export const CartEditItem: FC = () => (
   <>

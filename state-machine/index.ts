@@ -1,4 +1,5 @@
 import { createMachine } from 'xstate'
+
 import { defaultContext, CartMachineContext } from './context'
 import { CartMachineEvent } from './events'
 
