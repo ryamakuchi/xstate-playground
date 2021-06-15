@@ -1,23 +1,12 @@
-import { FC } from 'react';
-import {
-  Heading,
-  Flex,
-  Stack,
-  Box,
-  Center,
-  Image,
-  Text,
-  Button,
-} from '@chakra-ui/react';
-import { WarningIcon } from '@chakra-ui/icons';
+import { FC } from 'react'
+import { Heading, Flex, Stack, Box, Center, Image, Text, Button } from '@chakra-ui/react'
+import { WarningIcon } from '@chakra-ui/icons'
 
 export interface ShopProps {
-  onClick: () => void;
+  onClick: () => void
 }
 
-export const ShopPage: FC<ShopProps> = ({
-  onClick: handleClick
-}) => (
+export const ShopPage: FC<ShopProps> = ({ onClick: handleClick }) => (
   <>
     <Flex justify="center">
       <Box p={{ sm: '0', md: '8' }} m="4" border="1px" borderColor="gray.200" borderRadius="lg">
@@ -34,18 +23,15 @@ export const ShopPage: FC<ShopProps> = ({
               <Text fontSize="lg">コザクラブローチ（テスト商品）</Text>
 
               <Flex align="baseline">
-                <Text fontSize="2xl" fontWeight="bold">¥ 500</Text>
-                <Text fontSize="xs" color="gray.500" paddingLeft="1">税込</Text>
+                <Text fontSize="2xl" fontWeight="bold">
+                  ¥ 500
+                </Text>
+                <Text fontSize="xs" color="gray.500" paddingLeft="1">
+                  税込
+                </Text>
               </Flex>
 
-              <Flex
-                border="1px"
-                borderColor="red.500"
-                borderRadius="md"
-                align="center"
-                justify="center"
-                p="1"
-              >
+              <Flex border="1px" borderColor="red.500" borderRadius="md" align="center" justify="center" p="1">
                 <WarningIcon color="red.500" />
                 <Text fontSize="sm" color="red.500" paddingLeft="1">
                   デモのため実際に購入はできません

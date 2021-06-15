@@ -1,12 +1,11 @@
-import type { AppProps } from 'next/app';
-import { ChakraProvider } from '@chakra-ui/react';
-import { useMachine } from '@xstate/react';
-import { CartContext } from '../components/cart-context';
-import { cartMachine } from '../state-machine/index';
+import type { AppProps } from 'next/app'
+import { ChakraProvider } from '@chakra-ui/react'
+import { useMachine } from '@xstate/react'
+import { CartContext } from '../components/cart-context'
+import { cartMachine } from '../state-machine/index'
 
 function MyApp({ Component, pageProps }: AppProps) {
-
-  const [state, send, service] = useMachine(cartMachine, { devTools: true });
+  const [state, send, service] = useMachine(cartMachine, { devTools: true })
 
   return (
     <ChakraProvider>

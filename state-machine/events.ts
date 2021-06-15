@@ -18,7 +18,8 @@ export const retryEventCreator = () => ({
   type: 'RETRY',
 })
 
-export type CartMachineEvent = ReturnType<typeof inCartEventCreator>
+export type CartMachineEvent =
+  | ReturnType<typeof inCartEventCreator>
   | ReturnType<typeof checkoutEventCreator>
   | ReturnType<typeof completeEventCreator>
   | ReturnType<typeof failureEventCreator>

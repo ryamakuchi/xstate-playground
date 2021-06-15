@@ -1,15 +1,9 @@
-import { FC } from 'react';
-import {
-  Flex,
-  Box,
-  Divider,
-  Text,
-  Button
-} from '@chakra-ui/react';
+import { FC } from 'react'
+import { Flex, Box, Divider, Text, Button } from '@chakra-ui/react'
 
-import { CartEditCustomerForm } from './cart-edit-customer-form';
-import { CartEditCreditForm } from './cart-edit-credit-form';
-import { CartEditItem } from './cart-edit-item';
+import { CartEditCustomerForm } from './cart-edit-customer-form'
+import { CartEditCreditForm } from './cart-edit-credit-form'
+import { CartEditItem } from './cart-edit-item'
 
 export const CartEditPage: FC = () => (
   <>
@@ -20,13 +14,19 @@ export const CartEditPage: FC = () => (
         margin="0 -1rem 5%"
       >
         <Box w="100%" h="10" bg="teal.500" textAlign="center" margin="1% 1rem">
-          <Text lineHeight="10" fontSize="xl" color="white">1. 必要な情報の入力</Text>
+          <Text lineHeight="10" fontSize="xl" color="white">
+            1. 必要な情報の入力
+          </Text>
         </Box>
         <Box w="100%" h="10" bg="gray.200" textAlign="center" m="1% 1rem">
-          <Text lineHeight="10" fontSize="xl">2. 入力情報の確認</Text>
+          <Text lineHeight="10" fontSize="xl">
+            2. 入力情報の確認
+          </Text>
         </Box>
         <Box w="100%" h="10" bg="gray.200" textAlign="center" m="1% 1rem">
-          <Text lineHeight="10" fontSize="xl">3. 購入完了</Text>
+          <Text lineHeight="10" fontSize="xl">
+            3. 購入完了
+          </Text>
         </Box>
       </Flex>
     </Box>

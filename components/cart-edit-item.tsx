@@ -1,26 +1,14 @@
-import { FC } from 'react';
-import {
-  Heading,
-  Box,
-  Flex,
-  VStack,
-  StackDivider,
-  Center,
-  Image,
-  Text
-} from '@chakra-ui/react';
+import { FC } from 'react'
+import { Heading, Box, Flex, VStack, StackDivider, Center, Image, Text } from '@chakra-ui/react'
 
 export const CartEditItem: FC = () => (
   <>
     <Box>
-      <Heading as="h2" size="md">注文内容</Heading>
+      <Heading as="h2" size="md">
+        注文内容
+      </Heading>
 
-      <VStack
-        divider={<StackDivider borderColor="gray.200" />}
-        spacing={4}
-        align="stretch"
-        marginTop="4"
-      >
+      <VStack divider={<StackDivider borderColor="gray.200" />} spacing={4} align="stretch" marginTop="4">
         <Flex w="100%">
           <Center w="50%">
             <Image
@@ -64,7 +52,9 @@ export const CartEditItem: FC = () => (
         </Flex>
 
         <Flex w="100%" direction="row-reverse">
-          <Text fontSize="2xl" fontWeight="bold">¥ 500</Text>
+          <Text fontSize="2xl" fontWeight="bold">
+            ¥ 500
+          </Text>
           <Text fontSize="2xl">合計：</Text>
         </Flex>
       </VStack>

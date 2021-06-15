@@ -1,9 +1,6 @@
-import { FC } from 'react';
-import {
-  Center,
-  Link,
-} from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { FC } from 'react'
+import { Center, Link } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 export const Footer: FC = () => (
   <Center h="100px">

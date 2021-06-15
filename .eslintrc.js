@@ -100,6 +100,6 @@ module.exports = {
     // component の props の destructuring を非必須にする
     'react/destructuring-assignment': 'off',
     // console.errorを許容する
-    'no-console': ['error', {allow: ['warn', 'error']}],
-  }
+    'no-console': ['error', { allow: ['warn', 'error'] }],
+  },
 }
