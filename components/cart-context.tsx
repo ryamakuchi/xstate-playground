@@ -12,7 +12,7 @@ export type CartState<TContext = CartMachineContext, TEvent extends EventObject 
 
 export type CartService<TContext = CartMachineContext, TEvent extends EventObject = CartMachineEvent> = Interpreter<
   TContext,
-  any,
+  CartState,
   TEvent
 >
 
