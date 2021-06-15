@@ -14,7 +14,7 @@ module.exports = {
     'plugin:import/typescript',
     // 競合を避けるため、prettierは一番最後に書く
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
+    'prettier',
   ],
   globals: {
     Atomics: 'readonly',
@@ -59,8 +59,8 @@ module.exports = {
     'react/prop-types': 'off',
     // Next.js では React を import しなくてもよいので off にする
     'react/react-in-jsx-scope': 'off',
-    // 関数の引数や返り値に必ず型をつけるルールを on にする
-    '@typescript-eslint/explicit-module-boundary-types': 'on',
+    // 関数の引数や返り値に必ず型をつけるルールを error にする
+    '@typescript-eslint/explicit-module-boundary-types': 'error',
     // 未使用の変数がある場合エラーにする（デフォルトは warning）
     '@typescript-eslint/no-unused-vars': 'error',
     // named-exportを許可
