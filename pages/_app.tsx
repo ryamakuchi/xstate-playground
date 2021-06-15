@@ -5,7 +5,7 @@ import type { AppProps } from 'next/app'
 import { CartContext } from '../components/cart-context'
 import { cartMachine } from '../state-machine/index'
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const [state, send, service] = useMachine(cartMachine, { devTools: true })
 
   return (
@@ -16,4 +16,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   )
 }
-export default MyApp

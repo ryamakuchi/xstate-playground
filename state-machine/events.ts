@@ -1,20 +1,30 @@
-export const inCartEventCreator = () => ({
+export const inCartEventCreator = (): {
+  type: 'IN_CART'
+} => ({
   type: 'IN_CART',
 })
 
-export const checkoutEventCreator = () => ({
+export const checkoutEventCreator = (): {
+  type: 'CHECKOUT'
+} => ({
   type: 'CHECKOUT',
 })
 
-export const completeEventCreator = () => ({
+export const completeEventCreator = (): {
+  type: 'COMPLETE'
+} => ({
   type: 'COMPLETE',
 })
 
-export const failureEventCreator = () => ({
+export const failureEventCreator = (): {
+  type: 'FAILURE'
+} => ({
   type: 'FAILURE',
 })
 
-export const retryEventCreator = () => ({
+export const retryEventCreator = (): {
+  type: 'RETRY'
+} => ({
   type: 'RETRY',
 })
 

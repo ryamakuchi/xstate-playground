@@ -3,6 +3,6 @@ import { FC } from 'react'
 
 export const Header: FC = () => (
   <Center h="100px">
-    <Heading as="h1">rry's Shop</Heading>
+    <Heading as="h1">rry のおみせ</Heading>
   </Center>
 )

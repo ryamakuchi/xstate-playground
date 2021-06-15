@@ -7,7 +7,7 @@ import { Header } from '../components/header'
 import { ShopPage } from '../components/shop-page'
 import { inCartEventCreator } from '../state-machine/events'
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const { state, send } = useContext(CartContext)
 
   const handleClick = (): void => {

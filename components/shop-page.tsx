@@ -1,5 +1,5 @@
 import { WarningIcon } from '@chakra-ui/icons'
-import { Heading, Flex, Stack, Box, Center, Image, Text, Button } from '@chakra-ui/react'
+import { Flex, Stack, Box, Image, Text, Button } from '@chakra-ui/react'
 import { FC } from 'react'
 
 export interface ShopProps {
